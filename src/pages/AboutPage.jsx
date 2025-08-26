@@ -12,27 +12,6 @@ import FacultyCard from "../components/cards/FacultyCard";
 import { Link } from "react-router";
 
 const AboutPage = () => {
-  const stats = [
-    {
-      icon: Users,
-      value: "500+",
-      label: "Active Students",
-      color: "text-yellow-500",
-    },
-    {
-      icon: BookOpen,
-      value: "4",
-      label: "Study Programs",
-      color: "text-blue-800",
-    },
-    {
-      icon: Users,
-      value: "15+",
-      label: "Expert Instructors",
-      color: "text-yellow-500",
-    },
-    { icon: Award, value: "200+", label: "Graduates", color: "text-blue-800" },
-  ];
 
   const excellenceFeatures = [
     {
@@ -62,28 +41,36 @@ const AboutPage = () => {
     {
       title: "International Recognition",
       description:
-        "Our programs are recognized globally, opening doors to international opportunities.",
+        "Our programs are globally recognized, providing opportunities for international career growth.",
       points: [
         "UK-recognized diplomas",
         "Global industry partnerships",
-        "International standards",
+        "Aligned with international standards",
+      ],
+    },
+    {
+      title: "Key Partnerships",
+      points: [
+        "Myanmar Computer Federation (ITPEC Program) – Jan 2022",
+        "National Computer Center (NCC Program) – Jul 2023",
+        "ABE (Endorsed, UK) for single-subject diploma programs – Apr 2024",
       ],
     },
     {
       title: "Practical Learning",
       description:
-        "Hands-on approach with real-world projects and industry exposure.",
+        "We focus on real-world skills through hands-on training and industry exposure.",
       points: [
         "Project-based learning",
         "Industry internships",
-        "Real-world applications",
+        "Application of industry practices",
       ],
     },
     {
       title: "Expert Faculty",
       description:
-        "Learn from experienced professionals with deep industry knowledge.",
-      points: ["Industry veterans", "Continuous mentorship", "Career guidance"],
+        "Students learn from experienced industry professionals who provide:",
+      points: ["In-depth knowledge", "Ongoing mentorship", "Career guidance"],
     },
   ];
 
@@ -92,53 +79,29 @@ const AboutPage = () => {
       id: "1",
       name: "Dr. Thant Zin",
       title: "Senior IT Instructor",
-      bio: "A seasoned IT professional with over a decade of experience in both software development and education. Expertise spans across multiple programming languages and frameworks, with a particular focus on web development technologies.",
       profileImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
       expertise: ["Web Development", "Programming", "Software Engineering"],
-      experience: "10+ years in software development and education",
-      email: "thant.zin@nit.com.mm",
-      active: true,
-      createdAt: new Date("2024-01-01T00:00:00Z"),
-      updatedAt: new Date("2024-01-01T00:00:00Z")
     },
     {
       id: "2",
       name: "Ms. Khin Thida",
       title: "Business Analytics Expert",
-      bio: "Specializes in the intersection of business and technology, bringing corporate experience into education. Background in business analytics and information systems helps students understand how technology can drive business value.",
       profileImage: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
       expertise: ["Business Analytics", "Data Science", "Information Systems"],
-      experience: "8+ years in business analytics and corporate training",
-      email: "khin.thida@nit.com.mm",
-      active: true,
-      createdAt: new Date("2024-01-01T00:00:00Z"),
-      updatedAt: new Date("2024-01-01T00:00:00Z")
     },
     {
       id: "3",
       name: "Mr. Aung Kyaw",
       title: "Software Development Lead",
-      bio: "Focuses on software craftsmanship and professional development practices. Mentorship covers everything from clean code principles to agile methodologies. Provides students with insights into the full software development lifecycle.",
       profileImage: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
       expertise: ["Software Architecture", "Agile Methodology", "Team Leadership"],
-      experience: "12+ years in software development and team management",
-      email: "aung.kyaw@nit.com.mm",
-      active: true,
-      createdAt: new Date("2024-01-01T00:00:00Z"),
-      updatedAt: new Date("2024-01-01T00:00:00Z")
     },
     {
       id: "4",
       name: "Dr. Zaw Min",
       title: "AI Research Specialist",
-      bio: "Leading researcher in machine learning and neural networks with work focusing on explainable AI and ethical considerations. Breaks down complex AI concepts into understandable components while maintaining scientific rigor.",
       profileImage: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
       expertise: ["Machine Learning", "Neural Networks", "AI Ethics"],
-      experience: "15+ years in AI research and development",
-      email: "zaw.min@nit.com.mm",
-      active: true,
-      createdAt: new Date("2024-01-01T00:00:00Z"),
-      updatedAt: new Date("2024-01-01T00:00:00Z")
     }
   ];
   const loopedFaculty = [...featuredFaculty, ...featuredFaculty];
@@ -152,13 +115,13 @@ const AboutPage = () => {
               About NiT College
             </h1>
             <p className="text-xl lg:text-2xl text-gray-200 mb-6">
-              မြန်မာနိုင်ငံ မန္တလေးမြို့မှာ အခြေစိုက်တဲ့ NiT College ဟာ
-              မြန်မာလူငယ်တွေရဲ့ သစ်လွင်တဲ့ အနာဂတ် ခြေလှမ်းသစ်တွေအတွက်
-              အစပျိုးပေးမယ့် နေရာတစ်ခုဖြစ်ပါတယ်။
+              NiT ဟာဆိုရင် 2019 ခုနှစ်က စတင်တည်ထောင်ခဲ့ပြီး မြန်မာနိုင်မှာရှိတဲ့ လူငယ်များ  IT ဘာသာရပ်များကို လွယ်ကူစွာ လေ့လာနိုင်ဖို့အတွက် နိုင်ငံတကာအဆင့်မီ ပညာရေးပေးနေတဲ့ ကောလိပ်တစ်ခု ဖြစ်ပါတယ်။
             </p>
             <p className="text-lg text-gray-300 mb-8">
-              Building Myanmar's future through international standard education
-              and practical skills development.
+              Established: 27 September 2019 <br />
+              Over 4,000 students enrolled <br />
+              Offers certificate courses: A+, Network Engineering (NE), CCNA (200-301), Microsoft Windows Server, Linux System Administration, Linux Server Administration, Python Programming, Front-End Web Development, Application Development <br />
+              Classes: Online & Offline
             </p>
             <a
               href="/contact"
@@ -167,72 +130,16 @@ const AboutPage = () => {
               Contact Us <ArrowRight className="ml-2 w-5 h-5" />
             </a>
           </div>
-          <div>
-            <img
-              src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-              alt="NiT College campus building"
-              className="rounded-xl shadow-lg"
-            />
+          <div className=".w-full h-[20rem]">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/DX--PiwUO6o"
+                title="Campus Tour Video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
           </div>
-        </div>
-      </section>
-
-      {/* Stats */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-          {stats.map((stat, i) => {
-            const Icon = stat.icon;
-            return (
-              <div key={i}>
-                <div
-                  className={`inline-flex items-center justify-center w-16 h-16 rounded-lg mb-4 ${
-                    stat.color.includes("yellow")
-                      ? "bg-yellow-100"
-                      : "bg-blue-100"
-                  }`}
-                >
-                  <Icon className={`w-8 h-8 ${stat.color}`} />
-                </div>
-                <div className="text-4xl font-bold text-[#000080] mb-2">
-                  {stat.value}
-                </div>
-                <p className="text-gray-600">{stat.label}</p>
-              </div>
-            );
-          })}
-        </div>
-      </section>
-
-      {/* Excellence */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 text-center mb-16">
-          <h2 className="text-4xl font-bold text-[#000080] mb-4">
-            Our College Excellence
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            What makes NiT College the right choice for your educational journey
-          </p>
-        </div>
-        <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8 text-center">
-          {excellenceFeatures.map((feature, i) => {
-            const Icon = feature.icon;
-            return (
-              <div
-                key={i}
-                className="p-8 bg-white rounded-lg shadow hover:shadow-lg transition"
-              >
-                <div
-                  className={`inline-flex items-center justify-center w-16 h-16 rounded-lg mb-6 ${feature.color}`}
-                >
-                  <Icon className="w-8 h-8" />
-                </div>
-                <h3 className="text-xl font-bold text-[#000080] mb-4">
-                  {feature.title}
-                </h3>
-                <p className="text-gray-600">{feature.description}</p>
-              </div>
-            );
-          })}
         </div>
       </section>
 
@@ -243,10 +150,8 @@ const AboutPage = () => {
             <h2 className="text-4xl font-bold text-[#000080] mb-6">
               Why Choose NiT College?
             </h2>
-            <p className="text-lg text-gray-700 mb-8">
-              ကမ္ဘာ့လုပ်ငန်းခွင်နဲ့
-              ပြည်တွင်းလုပ်ငန်းခွင်တွေမှာအရည်အချင်းပြည့်မီတဲ့
-              လူငယ်တွေဖြစ်လာစေဖို့နိုင်ငံတကာအဆင့် ပညာရပ်တွေ၊ အတွေ့အကြုံတွေ
+            <p className="text-2xl text-gray-700 mb-8">  
+              IT နယ်ပယ်မှာအရည်အချင်းပြည့်မီသော ထူးချွန်သည့်လူငယ်တွေဖြစ်လာစေရန် နိုင်ငံတကာစံနှုန်းများနှင့် အညီ စာတွေ့လက်တွေ့
               ပြည့်ဝနေအောင် သင်ကြားပေးမှာ ဖြစ်ပါတယ်။
             </p>
             <div className="space-y-6">
@@ -295,6 +200,86 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
+      {/* Vision & Mission Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 text-center mb-16">
+          <h2 className="text-4xl font-bold text-[#000080] mb-4">Our Vision & Mission</h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Guiding principles that shape education and inspire success at NiT College
+          </p>
+        </div>
+
+        <div className="max-w-3xl mx-auto px-4 space-y-12">
+          {/* Vision */}
+          <div className="bg-gray-50 p-8 rounded-xl shadow hover:shadow-lg transition text-left">
+            <h3 className="text-2xl font-bold text-[#000080] mb-4">Our Vision</h3>
+            <ul className="space-y-4">
+              <li className="flex items-start">
+                <CheckCircle className="w-6 h-6 text-yellow-500 mr-3 mt-1" />
+                <span>To develop IT professionals who are ethical, skilled, and ready to lead in a global market.</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Mission */}
+          <div className="bg-gray-50 p-8 rounded-xl shadow hover:shadow-lg transition text-left">
+            <h3 className="text-2xl font-bold text-[#000080] mb-4">Our Mission</h3>
+            <ul className="space-y-4">
+              <li className="flex items-start">
+                <CheckCircle className="w-6 h-6 text-yellow-500 mr-3 mt-1" />
+                <span>Build strong industry partnerships to enhance learning and career opportunities</span>
+              </li>
+              <li className="flex items-start">
+                <CheckCircle className="w-6 h-6 text-yellow-500 mr-3 mt-1" />
+                <span>Inspire students to achieve excellence in information technology</span>
+              </li>
+              <li className="flex items-start">
+                <CheckCircle className="w-6 h-6 text-yellow-500 mr-3 mt-1" />
+                <span>Transform learners into leaders who can shape the future of the IT industry</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      {/* Excellence */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 text-center mb-16">
+          <h2 className="text-4xl font-bold text-[#000080] mb-4">
+            Our College Excellence
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            What makes NiT College the right choice for your educational journey
+          </p>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8 text-center">
+          {excellenceFeatures.map((feature, i) => {
+            const Icon = feature.icon;
+            return (
+              <div
+                key={i}
+                className="p-8 bg-white rounded-lg shadow hover:shadow-lg transition"
+              >
+                <div
+                  className={`inline-flex items-center justify-center w-16 h-16 rounded-lg mb-6 ${feature.color}`}
+                >
+                  <Icon className="w-8 h-8" />
+                </div>
+                <h3 className="text-xl font-bold text-[#000080] mb-4">
+                  {feature.title}
+                </h3>
+                
+                <p className="text-gray-600">{feature.description}</p>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+
 
       {/* Faculty */}
   <section className="py-20 bg-gray-50">
@@ -337,65 +322,6 @@ const AboutPage = () => {
     </div>
   </section>
 
-      {/* Video Section */}
-      <section
-        className="py-20 bg-gray-800 text-white"
-        data-testid="video-section"
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Text Section */}
-            <div>
-              <h2 className="text-4xl font-bold mb-6" data-testid="video-title">
-                See Our Campus in Action
-              </h2>
-              <p
-                className="text-xl text-gray-200 mb-8"
-                data-testid="video-description"
-              >
-                Take a virtual tour of our modern facilities and see how we're
-                preparing students for successful careers in technology and
-                business.
-              </p>
-              <div className="space-y-4">
-                <div
-                  className="flex items-center"
-                  data-testid="video-feature-1"
-                >
-                  <CheckCircle className="h-5 w-5 text-gold-400 mr-3" />
-                  <span>State-of-the-art computer labs</span>
-                </div>
-                <div
-                  className="flex items-center"
-                  data-testid="video-feature-2"
-                >
-                  <CheckCircle className="h-5 w-5 text-gold-400 mr-3" />
-                  <span>Modern classrooms with latest technology</span>
-                </div>
-                <div
-                  className="flex items-center"
-                  data-testid="video-feature-3"
-                >
-                  <CheckCircle className="h-5 w-5 text-gold-400 mr-3" />
-                  <span>Collaborative learning spaces</span>
-                </div>
-              </div>
-            </div>
-
-            {/* YouTube Video */}
-            <div className="relative w-full rounded-xl overflow-hidden shadow-lg aspect-video">
-              <iframe
-                className="w-full h-full"
-                src="https://www.youtube.com/embed/DX--PiwUO6o"
-                title="Campus Tour Video"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* CTA */}
       <section className="py-20 bg-yellow-50 text-center">

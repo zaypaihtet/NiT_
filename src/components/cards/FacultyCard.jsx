@@ -7,7 +7,6 @@ const FacultyCard = ({ member }) => (
     />
     <h3 className="text-xl font-bold #000080 mb-1">{member.name}</h3>
     <p className="text-yellow-600 font-medium mb-1">{member.title}</p>
-    <p className="text-gray-700">{member.bio}</p>
     {member.expertise && member.expertise.length > 0 && (
       <div
         className="flex flex-wrap gap-1 justify-center mt-2"

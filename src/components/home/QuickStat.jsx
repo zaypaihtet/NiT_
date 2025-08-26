@@ -4,9 +4,9 @@ import React from 'react'
 const QuickStat = () => {
      const stats = [
     { icon: Users, label: "Active Students", value: "500+", testId: "stat-students" },
-    { icon: BookOpen, label: "Study Programs", value: "4", testId: "stat-programs" },
+    { icon: BookOpen, label: "Study Programs", value: "5", testId: "stat-programs" },
     { icon: Users, label: "Expert Instructors", value: "15+", testId: "stat-instructors" },
-    { icon: Trophy, label: "Graduates", value: "200+", testId: "stat-graduates" },
+    { icon: Trophy, label: "Graduates", value: "100+", testId: "stat-graduates" },
   ];
   return (
     <section className="bg-white py-16" data-testid="stats-section">

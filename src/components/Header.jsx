@@ -133,11 +133,11 @@ const Header = () => {
             <div className="text-right" data-testid="header-contact-info">
               <div className="flex items-center text-sm text-gray-600 mb-1">
                 <Phone className="h-3 w-3 mr-1" />
-                <span data-testid="header-phone">09 788889170</span>
+                <span data-testid="header-phone">+95 9 780 778797</span>
               </div>
               <div className="flex items-center text-xs text-gray-500">
                 <MapPin className="h-3 w-3 mr-1" />
-                <span data-testid="header-location">Mingalar Mandalay</span>
+                <span data-testid="header-location">Kamayut, Yangon</span>
               </div>
             </div>
             <Link
